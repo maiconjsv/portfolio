@@ -6,6 +6,8 @@
     <title>Maicon Vieira</title>
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -47,17 +49,37 @@
         </div>
 
         <div class="projects">
-            <h1 id="projectsH1">Projects</h1>
-            <div id="projects-list">
-                <div class="project" id="project1">
-                    <img src="src/media/higien-window.png" alt="">
-                        <div id="project1-description">
-                            <h4 id="h4HigienWindow">Controle de higienização de pátio</h4>
-                            <p id="pHigienWindow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus dolorum, ab voluptas neque deserunt repellendus? Minus corporis ut cum odit, molestias laboriosam, pariatur fugiat doloremque corrupti, repudiandae blanditiis culpa ex?</p>
-                        </div>
-                </div>
-            </div>
+  <h1 id="projectsH1">Projects</h1>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="card">
+          <div class="img-card"><img src="src/media/higien-window-2.png" alt="Projeto 1" /></div>
+          <div class="text">
+            <h2 id="h2Project1">Controle de pátio</h2>
+            <p id="descriptionProject1">Sistema de controle de pátio para equipe da Localiza Seminovos no Catuai Shopping - Londrina, feito com integração ao Firebase</p>
+            <div class="saber-mais" id="saberMaisProject1">Saber mais</div>
+          </div>
         </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="src/media/higien-window.png" alt="Projeto 1" />
+          <div class="text">
+            <h2 id="h2Project2">PlaceHolder</h2>
+            <p id="descriptionProject2">PlaceHolder</p>
+            <div class="saber-mais" id="saberMaisProject2" >Saber mais</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
     </main>
     <footer>
         <h2>Maicon Vieira</h2>

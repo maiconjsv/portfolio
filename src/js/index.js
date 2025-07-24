@@ -7,9 +7,13 @@ const translate = {
         contact:"Contato",
         skillsH1:"Habilidades",
         projectsH1:"Projetos",
-        h4HigienWindow:"Sistema web de controle de pátio",
-        pHigienWindow:"lalala",
-        webDeveloperFooter:"Desenvolvedor Web | maiconjsv@gmail.com | Londrina PR"
+        webDeveloperFooter:"Desenvolvedor Web | maiconjsv@gmail.com | Londrina PR",
+        h2Project1: "Sistema Web de controle de pátio",
+        h2project2: "placeHolder",
+        descriptionProject1: "Sistema de controle de pátio para equipe da Localiza Seminovos no Catuai Shopping - Londrina, feito com integração ao Firebase",
+        descriptionProject2: "placeHolder",
+        saberMaisProject1: "Saber mais",
+        saberMaisProject2: "Saber Mais"
     },
     en:{
         jobTitle:'Web Developer',
@@ -18,9 +22,13 @@ const translate = {
         contact:"Contact",
         skillsH1:"Skills",
         projectsH1:"Projects",
-        h4HigienWindow:"Web system for yard control",
-        pHigienWindow:"lululu",
-        webDeveloperFooter:"Web Developer | maiconjsv@gmail.com | Londrina PR"
+        webDeveloperFooter:"Web Developer | maiconjsv@gmail.com | Londrina PR",
+        h2Project1: "Web system for yard control",
+        h2project2: "placeHolder",
+        descriptionProject1: "Yard control system for the Localiza Seminovos team at Catuai Shopping - Londrina, made with Firebase integration",
+        descriptionProject2: "placeholder",
+        saberMaisProject1: "find out more",
+        saberMaisProject2: "Find out more"
     }
 }
 
@@ -30,9 +38,13 @@ const project = document.getElementById('projects')
 const contact = document.getElementById('contact')
 const skillsH1 = document.getElementById('skillsH1')
 const projectsH1 = document.getElementById('projectsH1')
-const h4HigienWindow = document.getElementById('h4HigienWindow')
-const pHigienWindow = document.getElementById('pHigienWindow')
 const webDeveloperFooter = document.getElementById('webDeveloperFooter')
+const h2Project1 = document.getElementById('h2Project1')
+const h2project2 = document.getElementById('h2Project2')
+const descriptionProject1 = document.getElementById('descriptionProject1')
+const descriptionProject2 = document.getElementById('descriptionProject2')
+const saberMaisProject1 = document.getElementById('saberMaisProject1')
+const saberMaisProject2 = document.getElementById('saberMaisProject2')
 
 document.querySelector('.br-flag').addEventListener('click', () =>{
     jobTitle.textContent = translate.br.jobTitle;
@@ -41,21 +53,28 @@ document.querySelector('.br-flag').addEventListener('click', () =>{
     contact.textContent = translate.br.contact
     skillsH1.textContent = translate.br.skillsH1
     projectsH1.textContent = translate.br.projectsH1
-    h4HigienWindow.textContent = translate.br.h4HigienWindow
-    pHigienWindow.textContent = translate.br.pHigienWindow
     webDeveloperFooter.textContent = translate.br.webDeveloperFooter
+    h2Project1.textContent = translate.br.h2Project1
+    h2project2.textContent = translate.br.h2project2
+    descriptionProject1.textContent = translate.br.descriptionProject1
+    descriptionProject2.textContent = translate.br.descriptionProject2
+
 })
 
 document.querySelector('.us-flag').addEventListener('click', () =>{
-    jobTitle.textContent = translate.en.jobTitle;
+    jobTitle.textContent = translate.en.jobTitle
     descriptionTitle.textContent = translate.en.descriptionTitle
     project.textContent = translate.en.projects
     contact.textContent = translate.en.contact
     skillsH1.textContent = translate.en.skillsH1
     projectsH1.textContent = translate.en.projectsH1
-    h4HigienWindow.textContent = translate.en.h4HigienWindow
-    pHigienWindow.textContent = translate.en.pHigienWindow
     webDeveloperFooter.textContent = translate.en.webDeveloperFooter
+    h2Project1.textContent = translate.en.h2Project1
+    h2project2.textContent = translate.en.h2project2
+    descriptionProject1.textContent = translate.en.descriptionProject1
+    descriptionProject2.textContent = translate.en.descriptionProject2
+    saberMaisProject1.textContent = translate.en.saberMaisProject1;
+    saberMaisProject2.textContent = translate.en.saberMaisProject2;
 })
 
 
@@ -87,3 +106,18 @@ link2.addEventListener('click', () =>{
         'mailto: maiconjnsv@gmail.com';
     
 })
+
+//Swiper
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      1024: { slidesPerView: 1 },
+    },
+  });
