@@ -124,5 +124,7 @@ link2.addEventListener('click', () =>{
 
   //Links para projetos
   document.getElementById('saberMaisProject1').addEventListener('click', () =>{
-    window.open('project1.html', '_blank')
+    //window.open('project1.html', '_blank')
+    window.location.href =
+        'mailto: maiconjnsv@gmail.com';
   })
