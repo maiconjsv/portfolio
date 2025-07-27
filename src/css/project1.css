@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    background-color: rgb(21, 75, 21);
+    height: 90vh;
+    width: 100%;
+}
+    .introTexts{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 50%;
+        color: white;
+    }
+        .introTexts h1{
+            margin: 20px;
+        }
+            #localiza{
+            color: orange;
+        }
+        .introTexts h2{
+            margin: 20px;
+            margin-top: 0;
+        }
+    #arrow_downward{
+        font-size: 80px;
+        margin-left: 30px;
+        margin-top: 70px;
+        cursor: pointer;
+        transition: all ease 0.5s;
+    }
+        #arrow_downward:hover{
+            color:orange;
+            font-size: 85px;
+            transition: all ease 0.5s;
+        }
+        
+    .video{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .video video{
+            height: 61%;
+            border-radius: 10px;
+            box-shadow: black 5px 5px 5px;
+        }
+
+.flags{
+        width: 30%;
+        height: 100px;
+        position:fixed;
+        z-index: 11;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 4%;
+        transition: all ease 0.5s;
+    }
+        .flags.scrolled{
+            right: -30px;
+            gap: 1%;
+            transition: all ease 0.5s;
+        }
+    #translate-icons img{
+        height: 30%;
+        border-radius: 20%;
+        margin-right: 10%;
+        cursor: pointer;
+    }
+        #translate-icons img:hover{
+            height: 31%;
+            transition: all ease 0.3s;
+            box-shadow: white 2px 2px;
+        }

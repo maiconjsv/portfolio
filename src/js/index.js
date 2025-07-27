@@ -11,7 +11,7 @@ const translate = {
         h2Project1: "Sistema Web de controle de pátio",
         h2project2: "placeHolder",
         descriptionProject1: "Sistema de controle de pátio para equipe da Localiza Seminovos no Catuai Shopping - Londrina, feito com integração ao Firebase",
-        descriptionProject2: "placeHolder",
+        descriptionProject2: "Projeto pessoal em desenvolvimento com intuito de catalogar peças paralelas compativeis com modelos Royal Enfield.",
         saberMaisProject1: "Saber mais",
         saberMaisProject2: "Saber Mais"
     },
@@ -26,9 +26,9 @@ const translate = {
         h2Project1: "Web system for yard control",
         h2project2: "placeHolder",
         descriptionProject1: "Yard control system for the Localiza Seminovos team at Catuai Shopping - Londrina, made with Firebase integration",
-        descriptionProject2: "placeholder",
-        saberMaisProject1: "find out more",
-        saberMaisProject2: "Find out more"
+        descriptionProject2: "Personal project under development with the aim of cataloging parallel parts compatible with Royal Enfield models.",
+        saberMaisProject1: "Read More",
+        saberMaisProject2: "Read More"
     }
 }
 
@@ -121,3 +121,8 @@ link2.addEventListener('click', () =>{
       1024: { slidesPerView: 1 },
     },
   });
+
+  //Links para projetos
+  document.getElementById('saberMaisProject1').addEventListener('click', () =>{
+    window.open('project1.html', '_blank')
+  })
