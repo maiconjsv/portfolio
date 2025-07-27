@@ -392,6 +392,9 @@ footer h4{
         gap: 8px;
         padding: 0;
     }
+        .img-card{
+        height: 25%;
+    }
         .card h2{
             margin-left: 4px;
         }
